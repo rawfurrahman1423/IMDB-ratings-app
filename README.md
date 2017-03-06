@@ -1,0 +1,1 @@
+This is an app to find movie ratings using the movie's name.
