@@ -15,14 +15,25 @@
     <!-- custom JS -->
     <script src="js/script.js"></script>
   </head>
-  <body>
+  <body style="background-color:#cdd1d3;">
     
-    <div class="container-fluid">
-      <h1>IMDB Movie Ratings</h1>
-      <form method="post" action="/result">
-        Movie Name: <input type="text" name="playlist_id" size="35"><br>
-        <input type="submit" value="Get rating!">
-      </form>
+    <div class="container-fluid" >
+      
+      <div class="jumbotron">
+        <center>
+          <h1>IMDB Movie Ratings</h1>
+        <center>
+      </div>
+      
+      <div>
+        <form method="post" action="/result">
+          <center>
+            <h3>Movie Name:</h3> <input type="text" name="playlist_id" size="35"><br>
+            <input type="submit" value="Get rating!">
+          </center>
+        </form>
+      </div>
+      
     </div>
     
   </body>
