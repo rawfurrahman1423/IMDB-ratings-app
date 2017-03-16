@@ -10,4 +10,9 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
+  post '/result' do
+   @user_movie = Movie.new(params[:movie_name])
+   erb :result
+  end
+  
 end
