@@ -15,23 +15,25 @@
     <!-- custom JS -->
     <script src="js/script.js"></script>
   </head>
-  <body style="background-color:#cdd1d3;">
+  <body style="background-color:#cdd1d3;"> <!-- Adds background color-->
     
-    <div class="container-fluid" >
+    <div class="container-fluid" > 
       
+      <!-- creates a light heading section -->
       <div class="jumbotron">
-        <center>
+        <center> 
           <h1>IMDB Movie Ratings</h1>
         <center>
       </div>
       
+      <!-- Location for the user to type in the movie information (title/name) -->
       <div>
         <form method="post" action="/result">
           <center>
             <h3>Movie Name:</h3>
-            <input type="text" name="movie_name" size="35">
+            <input type="text" name="movie_name" size="35"> <!-- enter movie name here -->
             <br>
-            <input type="submit" value="Get Info!">
+            <input type="submit" value="Get Info!"> <!-- press button for info to be displayed -->
           </center>
         </form>
       </div>

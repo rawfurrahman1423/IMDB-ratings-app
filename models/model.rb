@@ -2,9 +2,10 @@ require 'omdbapi'
 require 'pp'
 
 class Movie
-    attr_reader :title, :year, :rating, :rated, :runtime, :genre, :releasedate, :seasons
+    attr_reader :title, :year, :rating, :rated, :runtime, :genre, :releasedate, :seasons #different holder of information
     
-    def initialize(title)
+    #all variables listed below that gets information based on what the user types into movie name
+    def initialize(title) 
         @title = title
         movie = OMDB.title(title)
         @year = movie.year
