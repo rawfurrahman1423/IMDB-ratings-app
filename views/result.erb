@@ -34,21 +34,20 @@
     <script src="js/script.js"></script>
   </head>
   <body style="background-color:#cdd1d3;">
-    
+    <center>
     <div class="container-fluid">
         <div class="jumbotron">
           <h1> <%= @user_movie.title %> </h1>
         </div>
         
-        <p> <%= @user_movie.year %> </p>
-        <p> <%= @user_movie.rating %> </p>
-        <p> <%= @user_movie.rated %> </p>
-        <p> <%= @user_movie.runtime %> </p>
-        <p> <%= @user_movie.releasedate %> </p>
-        <p> <%= @user_movie.genre %> </p>
-        <p> <%= @user_movie.seasons %> </p>
+        <p> The movie was released on <%= @user_movie.year %>. </p>
+        <p> The movie received an IMDB rating of <%= @user_movie.rating %> out of 10. </p>
+        <p> The movie is rated <%= @user_movie.rated %>. </p>
+        <p> The movie is <%= @user_movie.runtime %>utes long. </p>
+        <p> The movie was released on <%= @user_movie.releasedate %>. </p>
+        <p> The movie is an <%= @user_movie.genre %> film. </p>
     </div>
-    
+    </center>
   </body>
 </html>
     

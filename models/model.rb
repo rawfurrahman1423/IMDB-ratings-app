@@ -13,9 +13,9 @@ class Movie
         @runtime = movie.runtime
         @genre = movie.genre
         @releasedate = movie.released
-        @seasons = movie.total_seasons
+
     end
 end
 
-#test_movie = OMDB.title("Game of Thrones")
+#test_movie = OMDB.title("Logan")
 #pp test_movie
